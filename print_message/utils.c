@@ -6,13 +6,18 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 22:58:43 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/18 23:07:24 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:50:48 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../fractol.h"
 
 int	condintions(char *line)
 {
+	if (line == NULL)
+	{
+		free(line);
+		return (0);
+	}
 	if (!ft_strncmp(line, "YES\n", ft_strlen("YES") + 1)
 		|| !ft_strncmp(line, "y\n", ft_strlen("y") + 1))
 	{

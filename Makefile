@@ -18,7 +18,7 @@ SRC = main.c \
 	  GNL/get_next_line_utils.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -fsanitize=address -g3
+CFLAGS = -Wall -Werror -Wextra -g3#-fsanitize=address -g3
 RM = rm -rf
 LIBFT_DIR = libft
 LIBFT = $(LIBFT_DIR)/libft.a

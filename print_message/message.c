@@ -6,7 +6,7 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 13:53:35 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/07 15:34:35 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:48:19 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../fractol.h"
