@@ -6,7 +6,7 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/03 22:34:50 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/18 21:45:24 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:20:47 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FRACTOL_H
@@ -69,7 +69,7 @@ typedef struct s_factors
 
 typedef struct s_colors
 {
-	int palette_1[5];
+	int	palette_1[5];
 	int	in_set;
 	int	out_set;
 	int	bol;
@@ -131,6 +131,7 @@ void	get_color(int iterations, int max_iterations, t_colors *colors);
 int		check_arguments(t_fractol *fractol, char **argv, int argc);
 void	check_type(t_fractol *fractol);
 int		check_doubles(t_fractol *fractol);
+int		aux_double(t_fractol *fractol, int i, int j);
 int		check_doubles_max(t_fractol *fractol);
 
 //--> PRINTS

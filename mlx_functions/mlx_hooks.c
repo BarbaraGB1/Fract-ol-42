@@ -6,7 +6,7 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 22:32:00 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/18 14:15:16 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:12:35 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../fractol.h"
@@ -25,7 +25,7 @@ int	key_hook(int keycode, t_fractol *fractol)
 	else if (keycode == PLUS_ITER || keycode == LESS_ITER)
 		hook_iters(fractol, keycode);
 	else if (keycode == COLOR_A || keycode == COLOR_B || keycode == COLOR_C
-			|| keycode == COLOR_D)
+		|| keycode == COLOR_D)
 		hook_colors(fractol, keycode);
 	else
 		return (0);
@@ -45,7 +45,6 @@ int	mouse_hook(int keycode, int x, int y, t_fractol *fractol)
 		fractol->factors.zoom /= 1.1;
 	else
 		return (0);
-	
 	calculate_scale(&fractol->scale, fractol);
 	mlx_put_image_to_window(fractol->data.mlx, fractol->data.mlx_win,
 		fractol->data.img, 0, 0);

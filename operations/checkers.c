@@ -6,7 +6,7 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/06 14:14:49 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/18 23:02:54 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:23:04 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../fractol.h"
@@ -43,15 +43,10 @@ void	check_type(t_fractol *fractol)
 		set_julia(fractol);
 }
 
-int	check_doubles(t_fractol *fractol)
+int	aux_double(t_fractol *fractol, int i, int j)
 {
-	int	i;
-	int	j;
 	int	bool;
 
-	i = 1;
-	if (fractol->argv[2][0] == '\0' || fractol->argv[3][0] == '\0')
-		return (0);
 	while (fractol->argv[++i])
 	{
 		bool = 0;
@@ -72,6 +67,20 @@ int	check_doubles(t_fractol *fractol)
 		}
 	}
 	return (1);
+}
+
+int	check_doubles(t_fractol *fractol)
+{
+	int	i;
+	int	j;
+
+	i = 1;
+	j = 0;
+	if (fractol->argv[2][0] == '\0' || fractol->argv[3][0] == '\0')
+		return (0);
+	if (aux_double(fractol, i, j))
+		return (1);
+	return (0);
 }
 
 int	check_doubles_max(t_fractol *fractol)

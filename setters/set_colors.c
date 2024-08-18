@@ -6,14 +6,13 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 12:50:30 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/18 21:49:43 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:10:18 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../fractol.h"
 
 void	set_colors(t_colors *colors)
 {
-
 	colors->palette_1[0] = 0x6a0d83;
 	colors->palette_1[1] = 0x660066;
 	colors->palette_1[2] = 0xbe29ec;

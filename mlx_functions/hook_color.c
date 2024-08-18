@@ -6,7 +6,7 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 13:55:50 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/18 21:48:39 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:10:55 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../fractol.h"
@@ -24,7 +24,6 @@ void	color_b(t_fractol *fractol)
 
 void	color_c(t_fractol *fractol)
 {
-	
 	fractol->colors.palette_1[0] = 0x000000;
 	fractol->colors.palette_1[1] = 0x000000;
 	fractol->colors.palette_1[2] = 0x000000;
@@ -36,7 +35,6 @@ void	color_c(t_fractol *fractol)
 
 void	color_d(t_fractol *fractol)
 {
-	set_colors(&fractol->colors);	
 	fractol->colors.palette_1[0] = 0x000000;
 	fractol->colors.palette_1[1] = 0x000000;
 	fractol->colors.palette_1[2] = 0x000000;
