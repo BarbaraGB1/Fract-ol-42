@@ -25,11 +25,11 @@ void	color_b(t_fractol *fractol)
 void	color_c(t_fractol *fractol)
 {
 	
-	fractol->colors.palette_1[0] = 0x6a0d83;
-	fractol->colors.palette_1[1] = 0x660066;
-	fractol->colors.palette_1[2] = 0x00FFFF;
-	//fractol->cocolo.->palette_1[3] = 0xd896ff;
-	fractol->colors.palette_1[3] = 0xFFFFFF;
+	fractol->colors.palette_1[0] = 0x000000;
+	fractol->colors.palette_1[1] = 0x000000;
+	fractol->colors.palette_1[2] = 0x000000;
+	fractol->colors.palette_1[3] = 0xa40e04;
+	fractol->colors.palette_1[4] = 0xfca204;
 	fractol->colors.in_set = 0x0000000;
 	fractol->colors.bol = 0;
 }
@@ -40,7 +40,8 @@ void	color_d(t_fractol *fractol)
 	fractol->colors.palette_1[0] = 0x000000;
 	fractol->colors.palette_1[1] = 0x000000;
 	fractol->colors.palette_1[2] = 0x000000;
-	fractol->colors.palette_1[3] = 0xf6f6f6;
-	fractol->colors.palette_1[4] = 0xFFFFFF;
+	fractol->colors.palette_1[3] = 0xFFFFFF;
+	fractol->colors.palette_1[4] = 0xf6f6f6;
+	// fractol->colors.palette_1[4] = 0xFFFFFF;
 	fractol->colors.bol = 1;
 }
