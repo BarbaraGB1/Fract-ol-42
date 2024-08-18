@@ -6,7 +6,7 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/06 14:14:49 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/18 21:56:20 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:02:54 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../fractol.h"
@@ -47,7 +47,7 @@ int	check_doubles(t_fractol *fractol)
 {
 	int	i;
 	int	j;
-	int bool;
+	int	bool;
 
 	i = 1;
 	if (fractol->argv[2][0] == '\0' || fractol->argv[3][0] == '\0')

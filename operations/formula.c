@@ -6,7 +6,7 @@
 /*   By: bargarci <bargarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 12:39:16 by bargarci          #+#    #+#             */
-/*   Updated: 2024/08/18 21:49:21 by bargarci         ###   ########.fr       */
+/*   Updated: 2024/08/18 23:02:24 by bargarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../fractol.h"
@@ -60,8 +60,7 @@ void	recursive(t_fractol *fractol)
 		{
 			get_color(i, fractol->factors.iters, &fractol->colors);
 			my_mlx_pixel_put(&fractol->data, fractol->scale.x_original,
-					fractol->scale.y_original, fractol->colors.out_set);
-			
+				fractol->scale.y_original, fractol->colors.out_set);
 			return ;
 		}
 		i++;
