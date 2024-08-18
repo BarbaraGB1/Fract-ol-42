@@ -49,12 +49,12 @@ int	check_doubles(t_fractol *fractol)
 	int	j;
 	int bool;
 
-	bool = 0;
 	i = 1;
 	if (fractol->argv[2][0] == '\0' || fractol->argv[3][0] == '\0')
 		return (0);
 	while (fractol->argv[++i])
 	{
+		bool = 0;
 		j = 0;
 		if (fractol->argv[i][j] == '-')
 			j++;

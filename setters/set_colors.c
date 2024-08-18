@@ -17,8 +17,8 @@ void	set_colors(t_colors *colors)
 	colors->palette_1[0] = 0x6a0d83;
 	colors->palette_1[1] = 0x660066;
 	colors->palette_1[2] = 0xbe29ec;
-	//colors->palette_1[3] = 0xd896ff;
-	colors->palette_1[3] = 0xFFFFFF;
+	colors->palette_1[3] = 0xd896ff;
+	colors->palette_1[4] = 0xFFFFFF;
 	colors->in_set = 0x000000;
 	colors->bol = 0;
 }

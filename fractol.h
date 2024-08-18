@@ -69,7 +69,7 @@ typedef struct s_factors
 
 typedef struct s_colors
 {
-	int palette_1[4];
+	int palette_1[5];
 	int	in_set;
 	int	out_set;
 	int	bol;

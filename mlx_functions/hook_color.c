@@ -40,7 +40,7 @@ void	color_d(t_fractol *fractol)
 	fractol->colors.palette_1[0] = 0x000000;
 	fractol->colors.palette_1[1] = 0x000000;
 	fractol->colors.palette_1[2] = 0x000000;
-	// // //fractol->cocolo.->palette_1[30 = 0xd896ff;
-	fractol->colors.palette_1[3] = 0xFF0000;
+	fractol->colors.palette_1[3] = 0xf6f6f6;
+	fractol->colors.palette_1[4] = 0xFFFFFF;
 	fractol->colors.bol = 1;
 }
